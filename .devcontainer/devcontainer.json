@@ -1,0 +1,14 @@
+{
+	"name": "kantox_test",
+	"dockerComposeFile": "./../docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"JakeBecker.elixir-ls"
+			]
+		}
+	}
+}

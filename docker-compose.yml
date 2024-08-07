@@ -1,0 +1,14 @@
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: kantox_test
+    security_opt:
+      - seccomp:unconfined
+    working_dir: /workspace
+    command: tail -f /dev/null
+    env_file:
+      - .env
+    volumes:
+      - .:/workspace
